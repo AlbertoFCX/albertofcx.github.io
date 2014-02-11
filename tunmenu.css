@@ -1,0 +1,408 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+<title>Men&uacute; desplegable - javascript.tunait.com</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/javascript">
+/**************************************************************
+Menú desplegable tunMenu. Script creado por Tunait! (11/1/2004) actualizado el 4-jun-06
+Creado mediante el Generador de Menús en http://javascript.tunait.com
+Si quieres usar este script en tu sitio eres libre de hacerlo con la condición de que permanezcan intactas estas líneas, osea, los créditos.
+No autorizo a publicar y/o distribuír el código en sitios de script sin previa autorización
+Si quieres publicarlo, por favor, contacta conmigo.
+http://javascript.tunait.com/
+tunait@yahoo.com 
+****************************************************************/
+posArriba = 50
+posIzquierda = 0
+
+var anchoOp = 100
+var menuPrin =6
+
+var tunIex=navigator.appName=="Microsoft Internet Explorer"?true:false;
+var tiempo
+function menucete(ide,num){ // crea submenus principales (capa)
+	espan = document.createElement("span")
+	document.getElementById('Men_'+num).appendChild(espan)
+	espan.id=ide.toLowerCase(ide)+'_'+num
+	espan.className="subMe"
+	espan.cierra = true
+	espan.tiempo = 0
+	espan.style.top="-1px"
+	espan.onmouseout=function(){
+		setTimeout('ocultaP()',1000)
+	}
+	with(espan.style){
+		width = anchoOp+"px"
+	}
+	posIzquierda += anchoOp
+	construye(ide+'_'+num,eval('Op_'+num).subO)
+}
+function seccion(tex,enl,dstn,subO,an,dir){
+this.tex = tex
+this.enl = enl
+this.dstn = dstn
+this.subO = subO
+this.dir = dir
+this.an = an
+}
+var Op_0 = new seccion("Inicio",'index.html','',0)
+var Op_1 = new seccion("Biografía",null,null,2)
+var Op_1_0=new seccion('Estarlich','estarlich.html','Nueva',0)
+var Op_1_1=new seccion('Kometa','kometa.html','Nueva',0)
+var Op_2 = new seccion("Discografía",null,null,2)
+var Op_2_0=new seccion('avesRAPaces','avesrapacesmaqueta.html','Nueva',0)
+var Op_2_1=new seccion('Nada Más','nadamasmaqueta.html','Nueva',0)
+var Op_3 = new seccion("Fotos y videos",null,null,2)
+var Op_3_0=new seccion('Fotos',null,null,3)
+var Op_3_0_0=new seccion('2012','fotos2012.html','Nueva',0)
+var Op_3_0_1=new seccion('2013','fotos2013.html','Nueva',0)
+var Op_3_0_2=new seccion('2014','fotos2014.html','Nueva',0)
+var Op_3_1=new seccion('Vídeos',null,null,3)
+var Op_3_1_0=new seccion('2012','videos2012.html','Nueva',0)
+var Op_3_1_1=new seccion('2013','videos2013.html','Nueva',0)
+var Op_3_1_2=new seccion('2014','videos2014.html','Nueva',0)
+var Op_4 = new seccion("Letras",null,null,2)
+var Op_4_0=new seccion('avesRAPaces','avesrapacesletras.html','Nueva',0)
+var Op_4_1=new seccion('Nada Más','nadamasletras.html','Nueva',0)
+var Op_5 = new seccion("Contáctanos",'contactanos.html','Nueva',0)
+
+var anchoTotal = 624; 
+if(!tunIex){anchoTotal += menuPrin*3}
+function menPrin(){ //crea menu principal
+	menuP=document.createElement('div')
+	tablaP = document.createElement('table')
+	tablaP.border=1
+	menuP.appendChild(tablaP)
+	cuerpoTabla = document.createElement('tbody')
+	tablaP.appendChild(cuerpoTabla)
+	fila=document.createElement('tr')
+	fila.id ='filita'
+	cuerpoTabla.appendChild(fila)
+	tablaP.cellSpacing='0'
+	tablaP.className='celda'
+	document.getElementById('tunMenu').appendChild(menuP)
+	menuP.className = "subMeP"
+	menuP.id = 'MenuPrincipal'
+	menuP.style.visibility='hidden'
+	menuP.style.position="absolute"
+	menuP.style.width = anchoTotal +"px"
+	for(s=0; s<menuPrin; s++){ //crea botones principales
+		opcionP=document.createElement('div')
+		opcionP.className = "botonesP"
+		opcionP.style.width= anchoOp+'px'
+		document.getElementById('MenuPrincipal').appendChild(opcionP)
+		opcionP.id='Men_'+s
+		opcionP.onclick=function(){
+		}
+		celda = document.createElement('td')
+		document.getElementById('filita').appendChild(celda)
+		celda.id='celda_' + s
+		celda.appendChild(opcionP)
+		celda.className='celda'
+		if(eval('Op_'+s).subO > 0){
+			menucete('Op',s)
+		}
+	}
+}
+
+var subs=new Array(0)
+function construye(ide,num){
+	subOp=0
+	for(m=0; m<num; m++){
+		opchon = eval(ide +'_' + m)
+		caja = document.createElement("div")
+		boton = document.createElement("div")
+		boton.appendChild(caja)
+		caja.className='Caj'
+		document.getElementById(ide.toLowerCase()).appendChild(boton)
+		identi = ide.toLowerCase()  + "_" + m
+		caja.id=identi+'caja'
+		boton.id = identi
+		boton.className = 'botones'
+		document.getElementById(identi).appendChild(document.createTextNode(opchon.tex))
+		salto = document.createElement('br')
+		boton.onmouseover=function(){
+			this.className='botonesHover'
+			this.parentNode.cierra=false
+			muestra(this.parentNode.id)
+		}
+		boton.onmouseout=function(){
+			this.className='botones'
+			this.parentNode.cierra = true
+		}
+		if(opchon.subO > 0){
+			subs[subs.length] = identi
+			subOp++
+			boton.style.cursor='default'
+		}
+		else{
+			boton.style.cursor=cur
+			if(opchon.enl!=null){
+				boton.enl=opchon.enl
+				boton.dstn=opchon.dstn
+				boton.onclick=function(){
+					enlaces(this.enl,this.dstn)
+				}
+			}
+		}
+	}	
+	if(subs.length>0){construyeSub(subs)}
+}
+function construye2(ide,num){
+	for(m=0; m<num; m++){
+		opchon = eval(ide +'_' + m)
+		caja = document.createElement("div")
+		boton = document.createElement("div")
+		boton.appendChild(caja)
+		caja.className='Caj'
+		document.getElementById(ide.toLowerCase()+'_sub').appendChild(boton)
+		identi = ide.toLowerCase()  + "_" + m
+		boton.id = identi
+		caja.id=identi+'caja'
+		boton.className = 'botones'
+		document.getElementById(identi).appendChild(document.createTextNode(opchon.tex))
+		salto = document.createElement('br')
+		boton.onmouseover=function(){this.className='botonesHover'}
+		boton.onmouseout=function(){this.className='botones'}
+		if(opchon.subO > 0){
+			subs[subs.length] = identi
+			subOp++
+			boton.style.cursor='default'
+		}
+		else{
+			boton.style.cursor=cur
+			if(opchon.enl!=null){
+				boton.enl=opchon.enl
+				boton.dstn=opchon.dstn
+				boton.onclick=function(){
+					enlaces(this.enl,this.dstn)
+				}
+			}
+		}
+	}	
+}
+var cur=tunIex?'hand':'pointer'
+function construyeSub(lista){
+	largo = subs.length
+	for(t=0; t<subs.length;t++){
+		if(subs[t] != null){
+			obj = subs[t].charAt(0).toUpperCase() + subs[t].substr(1)
+			obj2 = subs[t].charAt(0).toUpperCase() + subs[t].substring(1,subs[t].length-2)
+			espan = document.createElement("span")
+			document.getElementById(subs[t]+'caja').appendChild(espan)
+			espan.id=subs[t]+'_sub'
+			espan.className="subMe"
+			espan.cierra = true
+			document.getElementById(subs[t]).onmouseover=function(){
+				this.className = 'botonesHover'
+				this.parentNode.cierra=false
+				muestra(this.id+'_sub')
+			}
+			document.getElementById(subs[t]).onmouseout=function(){
+				this.className = 'botones'
+				this.parentNode.cierra = true
+				oculta(this.id+'_sub')
+			}
+			espan.onclick=function(){
+			}
+			if(eval(obj2).an){An=eval(obj2).an}
+			else{An=anchoOp}
+			if(eval(obj).an){An2=eval(obj).an}
+			else{An2=anchoOp}
+			if(eval(obj).dir=='iz')
+			{pIz=-(An2-20)+"px"}
+			else{pIz=(An-20)+"px";}
+			
+			with(espan.style){
+			position="absolute"
+			width = An2+"px"
+			left= pIz
+			visibility = 'hidden'
+			}
+			construye2(obj,eval(obj).subO)
+			subs[t] = null
+		}
+	}
+}
+function enlaces(enl,dstn){
+	if(dstn != null && dstn.toLowerCase() == 'nueva'){
+		window.open(enl)
+	}
+	else if(dstn==null){
+		location.href=enl
+	}
+	else{
+		eval(dstn+'.location.href='+enl)
+	}
+}
+function muestra(cual){
+	document.getElementById(cual).style.visibility='visible'
+}
+function oculta(cual){
+document.getElementById(cual).style.visibility='hidden'
+}
+
+function ocultaP(){
+	for(y=0;y<menuPrin;y++){
+		if(document.getElementById('op_'+y)!=null){
+			if(document.getElementById('op_'+y).cierra){
+			document.getElementById('op_'+y).style.visibility='hidden'
+			}
+		}
+	}
+}
+function inicio(){
+	menuP=document.createElement('div')
+	tablaP = document.createElement('table')
+	tablaP.border=1
+	menuP.appendChild(tablaP)
+	cuerpoTabla = document.createElement('tbody')
+	tablaP.appendChild(cuerpoTabla)
+	fila=document.createElement('tr')
+	fila.id ='filitaP'
+	cuerpoTabla.appendChild(fila)
+	tablaP.cellSpacing='0'
+	tablaP.className='celda'
+	document.getElementById('tunMenu').appendChild(menuP)
+	menuP.className = "subMeP"
+	menuP.id = 'MenuPrincipalP'
+	menuP.style.width = anchoTotal+"px"
+	for(s=0; s<menuPrin; s++){ //crea botones principales
+		opcionP=document.createElement('div')
+		opcionP.className = "botones"
+		opcionP.style.width= anchoOp+'px'
+		opcionP.appendChild(document.createTextNode(eval('Op_'+s).tex))
+		document.getElementById('MenuPrincipalP').appendChild(opcionP)
+		opcionP.style.cursor = cur
+		opcionP.id='tuMen'+s
+		if(eval('Op_'+s).enl!=null){
+			opcionP.enl=eval('Op_'+s).enl
+			opcionP.dstn=eval('Op_'+s).dstn
+			opcionP.onclick=function(){
+				enlaces(this.enl,this.dstn)
+			}
+		}
+		celda = document.createElement('td')
+		document.getElementById('filitaP').appendChild(celda)
+		celda.id='celdaP_' + s
+		celda.appendChild(opcionP)
+		celda.className='celda'
+	}
+	for(n=0;n<menuPrin;n++){
+		document.getElementById('tuMen'+n).onmouseover=function(){
+			if(document.getElementById('op_'+this.id.substr(5))!=null){
+				clearTimeout(tiempo)
+				document.getElementById('op_'+this.id.substr(5)).cierra=false
+				ocultaP()
+				muestra('op_'+this.id.substr(5))
+			}
+			else{
+				clearTimeout(tiempo)
+				ocultaP()
+			}
+		}
+		document.getElementById('tuMen'+n).onmouseout=function(){
+			if(document.getElementById('op_'+this.id.substr(5))!=null){
+				document.getElementById('op_'+this.id.substr(5)).cierra=true
+				tiempo =setTimeout('ocultaP()',1000)
+			}
+		}
+	}
+	document.getElementById('tunMenu').style.width = anchoTotal + "px"
+	menPrin()
+}
+var activo = false
+window.onload=inicio
+</script>
+<style type="text/css">
+<!--
+#tunMenu{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #D8D8C5;
+}
+.botones {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #D8D8C5;
+	text-align: center;
+	border: 1px solid #333333;
+	margin: 2px;
+	vertical-align: middle;
+	color: #000000;
+	
+}
+.botonesHover{
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #0099CC;
+	text-align: center;
+	border: 1px solid #333333;
+	margin: 2px;
+	vertical-align: top;
+	color: #FFFFFF;
+}
+.subMe {
+	visibility: hidden;
+	position: absolute;
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #D8D8C5;
+	text-align: center;
+	border: 1px solid #000099;
+
+}
+.subMeP {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #D8D8C5;
+
+}
+.botonesP {
+	font-family: Tahoma, Verdana, Arial;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #D8D8C5;
+	border: 1px solid #009900;
+	margin: 2px;
+	color: #000000;
+	vertical-align: top;
+	height: 10px;
+}
+.celda{
+	margin:0;
+	padding: 0;
+	background-color: #D8D8C5;
+}
+.pepe{
+border: 1px solid #ff0000;
+position:absolute;
+left:0
+}
+#adsgoogle {
+	text-align: center;
+	margin-top: 10%;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="tunMenu"></div>
+<div style="margin-left: auto; margin-right: auto; width: 70%; font-family: trebuchet ms">
+<p>Copia el c&oacute;digo javascript y el c&oacute;digo css que est&aacute; en 
+  el c&oacute;digo fuente y pegalo en tu p&aacute;gina web.</p>
+<p>Debes crear un div o una celda o alg&uacute;n contenedor en donde quieras insertar 
+  el men&uacute; y darle por id <strong>tunMenu</strong></p>
+<p>&lt;td <strong>id=&quot;tunMenu&quot;</strong>&gt;</p>
+<p>Cambia el aspecto (colores, textos) normalmente desde la hoja de estilos. Puedes 
+  cambiar el aspecto a las clases botones y botonesHover.</p>
+ </div>
+ </body>
+</html>
