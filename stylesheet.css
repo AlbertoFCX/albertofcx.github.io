@@ -48,8 +48,9 @@ img{
     border-radius: 5px;
     padding: 15px;
     height: 900px;
-    width: 865px;
+    width: 865,px;
     text-indent: -9999em;
+    margin-top:150px;
 }
 div {
     margin: 0 auto;
