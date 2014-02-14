@@ -6,10 +6,18 @@ h1 {
     text-align: center;
     color: #FFFFFF;
 }
-.header {
+#header {
     position:relative;
     top:-10px;
     background-color: #FFFFFF;
     border-top-left-radius:15px;
     border-top-right-radius:15px;
+}
+#title{
+   text-align:center;
+    color:#FFFFFF;
+}
+#subtitle{
+    text-align:left;
+    color:#FFFFFF;
 }
