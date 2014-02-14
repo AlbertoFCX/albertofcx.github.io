@@ -1,18 +1,22 @@
 body {
     background-color: black;
 }
+@font-face {
+  font-family: "GeosansLight";
+  src:url("imagenes/GeosansLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Helvetica";
+  src:url("imagenes/helvetica-destru-pix.ttf") format("truetype");
+}
 h1 {
-    font-family: Impact;
+    font-family: "GeosansLight";
+    font-size:300%;
     text-align: center;
     color: #FFFFFF;
     margin-bottom:50px;
 }
 #header {
-    position:relative;
-    top:-10px;
-    background-color: #FFFFFF;
-    border-top-left-radius:15px;
-    border-top-right-radius:15px;
     position:fixed;
     top:-10px;
     background-color: #FFFFFF;
