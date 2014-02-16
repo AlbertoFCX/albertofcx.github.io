@@ -1,5 +1,5 @@
 body {
-    background-color: gray;
+    background-color: black;
 }
 @font-face {
   font-family: "GeosansLight";
@@ -63,7 +63,7 @@ img{
     height: 900px;
     width: 865px;
     text-indent: -9999em;
-    margin-top:150px;
+    margin: 150px auto;
 }
 #slider{
     margin:50px auto;
