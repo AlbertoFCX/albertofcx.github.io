@@ -113,3 +113,9 @@ img{
     right:10px;
     bottom:10px;
 }
+.twitter{
+    display:block;
+    margin:auto;
+    position:fixed;
+    float:center;
+}
