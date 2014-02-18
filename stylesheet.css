@@ -11,10 +11,16 @@
   src:url("imagenes/helvetica-destru-pix.ttf") format("truetype");
 }
 
+
 header {
-    margin:100px auto;
+    
 	width:1200px;
 	height:230px;
+	box-shadow: 50px 50px 50px rgba(0,0,0,0.4);
+	border-bottom-right-radius:15px;
+	margin: 50px auto;
+	margin-right: 500px;
+	
 	
 }
 div.contenedor{
@@ -22,33 +28,34 @@ div.contenedor{
 	height: 230px;
 	float:left;
 	-webkit-transition: height .4s;
+	 
 }
 #uno{
-	background-color: rgb(208,101,3);
+	background-color: rgb(67,85,105);
 	border-top-left-radius:15px;
 	border-bottom-left-radius:15px;
 }
 
 #dos{
-	background-color: rgb(233,147,26);
+	background-color: rgb(29,113,137);
 }
 
 #tres{
-	background-color: rgb(22,145,190);
+	background-color: rgb(171,51,76);
 }
 
 #cuatro{
-	background-color: rgb(22,107,162);
+	background-color: rgb(79,105,68);
 }
 
 #cinco{
-	background-color: rgb(27,54,71);
+	background-color: rgb(214,100,38);
 }
 
 #seis{
     border-top-right-radius:15px;
     border-bottom-right-radius:15px;
-	background-color: rgb(21,40,54);
+	background-color: rgb(59,94,136);
 }
 img.icon{
 	display: block;
