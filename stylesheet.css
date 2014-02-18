@@ -9,16 +9,10 @@ body {
   font-family: "Helvetica";
   src:url("imagenes/helvetica-destru-pix.ttf") format("truetype");
 }
-h1 {
-    font-family: "GeosansLight";
-    font-size:300%;
-    text-align: center;
-    color: #FFFFFF;
-    margin-bottom:50px;
-}
+
 .header {
     margin:100px auto;
-    width:1200px;
+    max-width:1200px;
     height:230px;
     background-color:white;
 }
@@ -65,21 +59,13 @@ h1 {
     height:250px;
     
 }
-#title{
-   text-align:center;
-    color:#FFFFFF;
-}
-#headertext{
-    display: block;
-    font-family:Impact;
-    text-align:center;
-}
+
 
 a {
     text-decoration: none;
     color: #000000
 }
-img{
+.FV{
     height:100%;
     width:100%;
 }
@@ -117,5 +103,5 @@ img{
     display:block;
     margin:auto;
     position:fixed;
-    float:center;
+    float:none;
 }
