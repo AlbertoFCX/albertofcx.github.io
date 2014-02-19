@@ -18,10 +18,13 @@ header {
 	height:230px;
 	box-shadow: 50px 50px 50px rgba(0,0,0,0.4);
 	border-bottom-right-radius:15px;
-	margin: 50px auto;
-	margin-right: 500px;
-	
-	
+	top:50%;
+	left:50%;
+	border-top:0;
+	padding-top:0;
+	margin-left:-150px;
+	margin-top:-130px;
+	position:absolute;
 }
 div.contenedor{
 	width: 200px;
@@ -129,13 +132,13 @@ body{
     right:10px;
     bottom:10px;
 }
-body{
-    text-align:center;
-    display:block;
-    margin: 100px auto;
-    margin-left:25%;
-    margin-right:25%;
-    padding:30px;
-    position:fixed;
-    float:none;
-}
+ body{
+      text-align:center;
+      display:block;
+      margin: 100px auto;
+      margin-left:25%;
+      margin-right:25%;
+      padding:30px;
+      position:fixed;
+      float:none;
+  }
