@@ -109,6 +109,7 @@ a {
     width:100%;
 }
 #enter a{ 
+    position:fixed;
     text-decoration:none;
     display: block;
     font-size: 40px;
@@ -217,3 +218,6 @@ div#aves:hover p#info2{
     color:white;
     text-decoration:none;
 }
+.scrollbars{
+    overflow:scroll; 
+    height:3000px;}
