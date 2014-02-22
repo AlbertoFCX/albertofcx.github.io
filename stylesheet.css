@@ -221,3 +221,11 @@ div#aves:hover p#info2{
 .scrollbars{
     overflow:scroll; 
     height:3000px;}
+.twitterlogo img {
+display:block;
+	width:100%;
+	height:100%;
+	border-bottom-right-radius:15px;
+	margin-top:300px;
+	margin-left:-500px;
+}
