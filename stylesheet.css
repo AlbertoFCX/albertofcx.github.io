@@ -1,7 +1,4 @@
-* {
-    margin:0;
-    padding:0;
-}
+
 @font-face {
   font-family: "GeosansLight";
   src:url("imagenes/GeosansLight.ttf") format("truetype");
@@ -10,7 +7,7 @@
   font-family: "Helvetica";
   src:url("imagenes/helvetica-destru-pix.ttf") format("truetype");
 }
-
+* {margin:0;padding:0; border:0; position: relative;}
 
 header {
     
@@ -18,13 +15,13 @@ header {
 	height:230px;
 	box-shadow: 50px 50px 50px rgba(0,0,0,0.4);
 	border-bottom-right-radius:15px;
-	top:50%;
-	left:50%;
 	border-top:0;
 	padding-top:0;
 	margin-left:-150px;
 	margin-top:-130px;
-	position:absolute;
+    left:50%;
+    top:50%;
+    position:absolute;
 }
 div.contenedor{
 	width: 200px;
@@ -98,11 +95,6 @@ a {
     height:100%;
     width:100%;
 }
-body{
-    background-image:url("imagenes/Madera.jpg");
-    background-size: 100% 100%;
-    background-attachment:fixed;
-}
 #enter a{ 
     text-decoration:none;
     display: block;
@@ -119,11 +111,15 @@ body{
 }
 #slider{
     margin:50px auto;
-    position:relative;
-    width:240px;
-    height:240px;
+    position:fixed;
+    width:300px;
+    height:480px;
     padding: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    left:50%;
+    top:50%;
+    margin-left:150px;
+    margin-top:240px;
 }
 #slider > div {
     position:absolute;
@@ -133,12 +129,22 @@ body{
     bottom:10px;
 }
  body{
-      text-align:center;
-      display:block;
-      margin: 100px auto;
-      margin-left:25%;
-      margin-right:25%;
-      padding:30px;
-      position:fixed;
-      float:none;
-  }
+    background-image:url("imagenes/Madera.jpg");
+    background-size: 100% 100%;
+    background-attachment:fixed;
+    overflow:hidden;
+    text-align:center;
+    display:block;
+    margin: 100px auto;
+    margin-left:25%;
+    margin-right:25%;
+    padding:30px;
+    position:fixed;
+    float:none;
+ }
+.twitter {
+    display:inline;
+    padding:20px;
+
+ }
+    
