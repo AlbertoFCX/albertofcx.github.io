@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Stude";
-  src:url("fonts/Stude.ttf") format("truetype");
+  font-family: "Birds";
+  src:url("fonts/Birds of Paradise.ttf") format("truetype");
 }
 @font-face {
   font-family: "Circus";
@@ -44,7 +44,8 @@ color:white;
 }
 
 header {
-    font-family:"Stude";
+    font-family:"Talldeco";
+    font-size: 25px;
     display:block;
 	width:900px;
 	height:230px;
