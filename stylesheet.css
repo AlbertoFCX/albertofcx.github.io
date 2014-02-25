@@ -36,10 +36,7 @@
 }
 
 
-* { margin:0;
-padding:0; 
-border:0; 
-position: relative;
+* { 
 color:white;
 }
 
@@ -225,15 +222,15 @@ a {
     bottom:10px;
 }
  body{
+    width:3000px;
+    height:3000px;
     background-image:url("imagenes/Madera.jpg");
     background-size: 100% 100%;
     background-attachment:fixed;
-    overflow:hidden;
+    overflow:scroll;
     text-align:center;
     display:block;
     margin: 100px auto;
-    margin-left:25%;
-    margin-right:25%;
     padding:30px;
     position:fixed;
     float:none;
