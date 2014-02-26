@@ -37,9 +37,8 @@
 
 
 * { 
-color:white;
+color:white;;
 }
-
 .body1 {
 	width:900px;
 	height:460px;
@@ -91,7 +90,7 @@ h1 {
         font-size:50px;
         font-family:"Talldeco";
 }
-header {
+#header {
     font-family:"Talldeco";
     font-size: 25px;
     display:block;
@@ -123,37 +122,37 @@ div.contenedor{
 	 
 }
 #uno{
-	background-color: rgb(67,85,105);
+	background-color: rgba(255,255,255,.70)
 	border-top-left-radius:15px;
 	border-bottom-left-radius:15px;
 }
 
 #dos{
-	background-color: rgb(29,113,137);
+	background-color: rgba(255,255,255,.70);
 }
 
 #tres{
-	background-color: rgb(171,51,76);
+	background-color: rgba(255,255,255,.70);
 }
 
 #cuatro{
-	background-color: rgb(79,105,68);
+	background-color: rgba(255,255,255,.70);
 }
 
 #cinco{
-	background-color: rgb(214,100,38);
+	background-color: rgba(255,255,255,.70);
 }
 
 #seis{
     border-top-right-radius:15px;
     border-bottom-right-radius:15px;
-	background-color: rgb(59,94,136);
+	background-color: rgba(255,255,255,1);
 }
 img.icon{
 	display: block;
-	margin:50px auto;
+	margin:40px auto;
 	background-color: rgba(255,255,255,.15);
-	width:40px;
+	width:70px;
 	padding:20px;
 	-webkit-border-radius: 50%;
 	-webkit-box-shadow: 0px 0px 0px 30px rgba(255,255,255,0);
@@ -222,8 +221,8 @@ a {
     bottom:10px;
 }
  body{
-    width:3000px;
-    height:3000px;
+    max-width:100%;
+    max-height:100%;
     background-image:url("imagenes/Madera.jpg");
     background-size: 100% 100%;
     background-attachment:fixed;
@@ -232,7 +231,7 @@ a {
     display:block;
     margin: 100px auto;
     padding:30px;
-    position:fixed;
+    position:relative;
     float:none;
  }
 .twitter {
