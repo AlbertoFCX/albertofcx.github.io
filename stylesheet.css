@@ -40,7 +40,7 @@
 color:white;;
 }
 .body1 {
-	width:900px;
+	width:90%;
 	height:460px;
 	box-shadow: 50px 50px 50px rgba(0,0,0,0.4);
 	border: 2px solid white;
@@ -49,18 +49,14 @@ color:white;;
 	border-bottom-right-radius:15px;
 	border-bottom-left-radius:15px;
 	margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 300px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px; 
     background-color: rgba(255,255,255,.15);
     position:absolute;
 }
 .body2 {
-	width:900px;
+	width:90%;
 	height:460px;
 	box-shadow: 50px 50px 50px rgba(0,0,0,0.4);
 	border: 2px solid white;
@@ -69,8 +65,8 @@ color:white;;
 	border-bottom-right-radius:15px;
 	border-bottom-left-radius:15px;
 	margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 800px;
     padding-bottom: 0px;
     padding-left: 0px;
@@ -80,7 +76,7 @@ color:white;;
     position:absolute;
 }
 .body3 {
-	width:900px;
+	width:90%;
 	height:460px;
 	box-shadow: 50px 50px 50px rgba(0,0,0,0.4);
 	border: 2px solid white;
@@ -89,8 +85,8 @@ color:white;;
 	border-bottom-right-radius:15px;
 	border-bottom-left-radius:15px;
 	margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 1300px;
     padding-bottom: 0px;
     padding-left: 0px;
@@ -327,4 +323,18 @@ div#aves:hover p#info2{
     color:white;
     text-decoration:none;
 }
+.end{
+    width:95%;
+    height:3px;
+    background-color:white;
+    margin-top: 1800px;
+    margin-left:18px;
+    box-shadow: 50px 50px 50px rgba(0,0,0,0.4);
+    position:relative;
+}
 
+#Vaves{
+    margin-left:15%;
+    margin-top:300px;
+    position:relative;
+}
