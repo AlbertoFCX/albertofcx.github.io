@@ -212,7 +212,7 @@ a {
     width:100%;
 }
 #enter a{ 
-    position:fixed;
+    position:relative;
     text-decoration:none;
     display: block;
     font-size: 40px;
@@ -224,7 +224,7 @@ a {
     height: 900px;
     width: 865px;
     text-indent: -9999em;
-    margin: 150px auto;
+    left: 25%;
 }
 #slider{
     margin:50px auto;
