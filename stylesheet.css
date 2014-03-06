@@ -337,3 +337,37 @@ div#aves:hover p#info2{
     margin-top:20px;
     position:relative;
 }
+#begin {
+    margin-top:200px;
+ }
+#camiseta > img {
+    width:50%;
+    height:50%;
+    border-top-right-radius:15px;
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius:15px;
+    box-shadow: 50px 50px 50px rgba(0,0,0,0.4);
+ }
+ #nadamas > img {
+    width:30%;
+    height:30%;
+ }
+#Sudadera1 > img  {
+    width:25%;
+    height:25%;
+    border-top-right-radius:15px;
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius:15px;
+    box-shadow: 50px 50px 50px rgba(0,0,0,0.4);
+}
+#Sudadera2 > img  {
+   width:25%;
+    height:25%;
+    border-top-right-radius:15px;
+    border-top-left-radius:15px;
+    border-bottom-right-radius:15px;
+    border-bottom-left-radius:15px;
+    box-shadow: 50px 50px 50px rgba(0,0,0,0.4); 
+}
