@@ -212,7 +212,7 @@ a {
     width:100%;
 }
 #enter a{ 
-    position:relative;
+    position:absolute;
     text-decoration:none;
     display: block;
     font-size: 40px;
@@ -224,7 +224,6 @@ a {
     height: 900px;
     width: 865px;
     text-indent: -9999em;
-    left: 25%;
 }
 #slider{
     margin:50px auto;
@@ -337,4 +336,7 @@ div#aves:hover p#info2{
     margin-left:15%;
     margin-top:300px;
     position:relative;
+}
+#begin {
+    margin-top:200px;
 }
