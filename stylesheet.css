@@ -217,17 +217,20 @@ a {
  position:absolute;
 }
 #enter a{ 
+    top:50%;
+    left:33.3%;
     text-decoration:none;
     display: block;
     font-size: 40px;
     line-height: 48px;
-    background: url('imagenes/Web.png') no-repeat top center;
+    background: url('imagenes/Web.png') no-repeat;
     color: #f2f2f2;
     border-radius: 5px;
     padding: 15px;
     height: 900px;
     width: 865px;
     text-indent: -9999em;
+    position:relative;
 }
  body{
     max-width:100%;
@@ -366,6 +369,7 @@ div#aves:hover p#info2{
     box-shadow: 50px 50px 50px rgba(0,0,0,0.4); 
 }
 #formulario {
+    width:10%;
     top:30%;
     left:5%;
     position:fixed;
