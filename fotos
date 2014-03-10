@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>FUERA DE CONTEXTO</title>
+    </head>
+        <div id="header">
+            <div class="contenedor" id="uno">
+               <img class="icon" src="imagenes/home.png">
+               <p class= "menu"><a href="inicio.html">INICIO</a></p>
+            </div>
+            
+            <div class="contenedor" id="dos">
+               <img class="icon" src="imagenes/bio.png">
+               <p class="menu"><a href="biografia.html">BIOGRAFÍA</a></p>
+            </div>
+            
+            <div class="contenedor" id="tres">
+               <img class="icon" src="imagenes/music.png">
+               <p class="menu"><a href="discografia.html">DISCOGRAFÍA</a></p>
+            </div>
+            
+            <div class="contenedor" id="cuatro">
+               <img class="icon" src="imagenes/email.png">
+               <p class="menu"><a href="Contacto.html">CONTACTO</a></p>
+            </div>
+            
+            <div class="contenedor" id="cinco">
+               <img class="icon" src="imagenes/camera.png">
+               <p class="menu"><a href="fv.html">FOTOS Y VÍDEOS</a></p>
+            </div>
+            
+            <div class="contenedor" id="seis">
+               <img class="icon" src="imagenes/letras.png">
+               <p class="menu"><a href="letras.html">LETRAS</a></p>
+            </div>
+        </div>
+    
+    <body>
+        <div id="begin">
+        <h1>NOVEDADES</h1>
+            <h2>CAMISETA + CD 10 €</h2>
+            <img src= ></div>
+            <h2>CAMISETA "NADA MÁS" (No disponible)</h2>
+            <h2>SUDADERAS "NADA MÁS"(No disponibles)</h2>
+        </div>
+        <div id="formulario">
+            <h2>PEDIDOS</h2>
+        </div>
+        
+    </body>
+    
+</html>
