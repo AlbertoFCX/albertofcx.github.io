@@ -365,3 +365,8 @@ div#aves:hover p#info2{
     border-bottom-left-radius:15px;
     box-shadow: 50px 50px 50px rgba(0,0,0,0.4); 
 }
+#formulario {
+    top:30%;
+    left:5%;
+    position:fixed;
+}
