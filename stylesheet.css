@@ -315,22 +315,22 @@ div#aves:hover p#info2{
 }
 
 #Vaves{
-    margin-left:15%;
+    
     margin-top:300px;
     position:relative;
 }
 #following{
-    margin-left:15%;
+    
     margin-top:20px;
     position:relative;
 }
 .inedit {
-    margin-left:15%;
+    
     margin-top:20px;
     position:relative;
 }
 .conciertos {
-    margin-left:15%;
+    
     margin-top:20px;
     position:relative;
 }
@@ -373,4 +373,11 @@ div#aves:hover p#info2{
     top:50%;
     left:5%;
     position:fixed;
+}
+#tabla {
+    margin-left:20%;
+    margin-top:20%;
+}
+#tabla > table {
+    position:absolute;
 }
