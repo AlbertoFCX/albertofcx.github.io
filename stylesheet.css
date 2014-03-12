@@ -260,7 +260,7 @@ position:relative;
     width:640px;
     height:640px;
     position:relative;
-    margin-left:130px;
+    margin-left:33%;
     margin-top:200px;
     background-image: url("imagenes/image.jpg");
     box-shadow: 50px 50px 50px rgba(0,0,0,0.4);
@@ -315,7 +315,6 @@ div#aves:hover p#info2{
 }
 
 #Vaves{
-    
     margin-top:300px;
     position:relative;
 }
@@ -375,7 +374,7 @@ div#aves:hover p#info2{
     position:fixed;
 }
 #tabla {
-    margin-left:20%;
+    margin-left:33%;
     margin-top:20%;
 }
 #tabla > table {
