@@ -355,3 +355,9 @@ div#aves:hover p#info2{
 #tabla > table {
     position:absolute;
 }
+#letras1 > a> img{
+    width:320px;
+    height:320px;
+    margin-top:25%;
+    box-shadow: 50px 50px 50px rgba(0,0,0,0.4);
+}
