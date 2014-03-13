@@ -212,26 +212,10 @@ a {
     width:100%;
 }
 #enter {
- top:50%;  
- left:25%;
- position:absolute;
+
+ position:relative;
 }
-#enter a{ 
-    top:50%;
-    left:33.3%;
-    text-decoration:none;
-    display: block;
-    font-size: 40px;
-    line-height: 48px;
-    background: url('imagenes/Web.png') no-repeat;
-    color: #f2f2f2;
-    border-radius: 5px;
-    padding: 15px;
-    height: 900px;
-    width: 865px;
-    text-indent: -9999em;
-    position:relative;
-}
+
  body{
     max-width:100%;
     max-height:100%;
@@ -246,21 +230,15 @@ a {
     position:relative;
     float:none;
  }
- #twitter1 > a{
-     width:75%;
-     position:relative;
- }
-#twitter1 {
-position:relative;
-  margin-top:10%; 
-  left:10%;
-  display:block
+ .twitter {
+    margin-top:20%;
 }
+
 #aves {
     width:640px;
     height:640px;
     position:relative;
-    margin-left:33%;
+    margin-left:20%;
     margin-top:200px;
     background-image: url("imagenes/image.jpg");
     box-shadow: 50px 50px 50px rgba(0,0,0,0.4);
@@ -368,10 +346,7 @@ div#aves:hover p#info2{
     box-shadow: 50px 50px 50px rgba(0,0,0,0.4); 
 }
 #formulario {
-    width:10%;
-    top:50%;
-    left:5%;
-    position:fixed;
+    position:relative;
 }
 #tabla {
     margin-left:33%;
