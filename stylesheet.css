@@ -361,3 +361,9 @@ div#aves:hover p#info2{
     margin-top:25%;
     box-shadow: 50px 50px 50px rgba(0,0,0,0.4);
 }
+#end2 {
+    display:block;
+}
+#end > p {
+    margin:5%auto;
+}
