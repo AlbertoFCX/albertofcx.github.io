@@ -367,3 +367,24 @@ div#aves:hover p#info2{
 #end > p {
     margin:5%auto;
 }
+#choose {
+    position:relative;
+    margin-top:25%;
+    
+}
+#choose > a {
+    border: 2px solid white;
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	border-bottom-right-radius:15px;
+	border-bottom-left-radius:15px;
+}
+#choose > a > img {
+    margin-left:5%;
+    margin-right:5%;
+    width:200px;
+    height:200px;
+}
+    
+    
+    
