@@ -233,13 +233,19 @@ a {
  .twitter {
     margin-top:20%;
 }
+.CD{
+    position:relative;
+    margin-top:200px;
+}
+
+/*avesRAPaces*/
 
 #aves {
     width:640px;
     height:640px;
     position:relative;
     margin-left:31.35%;
-    margin-top:200px;
+    margin-top:10px;
     background-image: url("imagenes/image.jpg");
     box-shadow: 50px 50px 50px rgba(0,0,0,0.4);
 }
@@ -276,12 +282,68 @@ p#info2{
     margin-top: 660px;
 }
 div#aves:hover p#info2{
-    margin-top:70px;
+    margin-top:320px;
+    font-family:"Day";
 }
 #info2 a {
     color:white;
     text-decoration:none;
+    font-size:50px;
 }
+
+/*Delirium Tremens*/
+
+#DT {
+    width:619px;
+    height:464px;
+    position:relative;
+    margin-left:31.35%;
+    margin-top:10px;
+    background-image: url("imagenes//Discos/DT/Portada.jpg");
+    box-shadow: 50px 50px 50px rgba(0,0,0,0.4);
+}
+#infoDT {
+    position:absolute;
+    width:619px;
+    height:464px;
+    background-color: rgba(31,31,31,.9);
+    -webkit-transition:opacity 0.2s;
+    opacity:0;
+    overflow:hidden;
+}
+div#DT:hover div#infoDT {
+    opacity:1;
+}
+#headlineDT {
+    text-align:center;
+    position:absolute;
+    -webkit-transition:margin 0.2s;
+    margin-left:auto;
+    font-size:50px;
+    margin-top:20px;
+}
+div#DT:hover p#headlineDT{
+margin-left:145px;
+text-align:center;
+}
+
+p#info2DT{
+    width:600;
+    text-align:center;
+    margin:auto;
+    -webkit-transition:margin 0.3s;
+    margin-top: 660px;
+}
+div#DT:hover p#info2DT{
+    margin-top:320px;
+    font-family:"Day";
+}
+#info2DT a {
+    color:white;
+    text-decoration:none;
+    font-size:50px;
+}
+
 .end{
     width:95%;
     height:3px;
