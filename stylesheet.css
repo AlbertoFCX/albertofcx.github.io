@@ -1,4 +1,8 @@
 @font-face {
+  font-family: "Corp";
+  src:url("fonts/Corporate.TTF") format("truetype");
+}
+@font-face {
   font-family: "Birds";
   src:url("fonts/Birds of Paradise.ttf") format("truetype");
 }
@@ -36,9 +40,7 @@
 }
 
 
-* { 
-color:white;;
-}
+
 .body1 {
 	width:90%;
 	height:460px;
@@ -54,7 +56,10 @@ color:white;;
     margin-top: 300px;
     background-color: rgba(255,255,255,.15);
     position:absolute;
+    color:white;
+   
 }
+
 .body2 {
 	width:90%;
 	height:460px;
@@ -74,7 +79,9 @@ color:white;;
     padding-top: 0px; 
     background-color: rgba(255,255,255,.15);
     position:absolute;
+    color:white;
 }
+
 .body3 {
 	width:90%;
 	height:460px;
@@ -94,7 +101,9 @@ color:white;;
     padding-top: 0px; 
     background-color: rgba(255,255,255,.15);
     position:absolute;
+    color:white;
 }
+
 
 .body1 > #bio {
     text-align:center;
@@ -204,7 +213,7 @@ div.contenedor:hover img.icon{
 }
 
 a {
-    text-decoration: none;
+    /*text-decoration: none;*/
     color: white
 }
 .FV{
@@ -375,6 +384,7 @@ div#DT:hover p#info2DT{
 }
 #begin {
     margin-top:200px;
+    color:white;
  }
 #camiseta > img {
     width:50%;
@@ -440,8 +450,9 @@ div#DT:hover p#info2DT{
     
 }
 .thumbs {
-    margin-top:400px;
+    margin-top:10%;
     margin-right:15px;
+    margin-bottom:2%;
     width:280px;
     height:180px;
     float:left;
