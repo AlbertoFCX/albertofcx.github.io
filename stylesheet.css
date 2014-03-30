@@ -473,3 +473,7 @@ div#DT:hover p#info2DT{
     float:left;
     border: 2px solid white;
 }
+p {
+    text-align: center;
+    font-size: 20px;
+}
