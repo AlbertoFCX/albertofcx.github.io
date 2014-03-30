@@ -213,7 +213,7 @@ div.contenedor:hover img.icon{
 }
 
 a {
-    /*text-decoration: none;*/
+    text-decoration: none;
     color: white
 }
 .FV{
@@ -238,6 +238,7 @@ a {
     padding:30px;
     position:relative;
     float:none;
+    color:white;
  }
  .twitter {
     margin-top:20%;
@@ -266,6 +267,7 @@ a {
     -webkit-transition:opacity 0.2s;
     opacity:0;
     overflow:hidden;
+    font-family:"Corp";
 }
 div#aves:hover div#info {
     opacity:1;
@@ -275,11 +277,13 @@ div#aves:hover div#info {
     position:absolute;
     -webkit-transition:margin 0.2s;
     margin-left:auto;
-    font-size:50px;
+    font-size:100px;
     margin-top:20px;
+    font-family:"Corp";
+    
 }
 div#aves:hover p#headline{
-margin-left:185px;
+margin-left:200px;
 text-align:center;
 }
 
@@ -292,12 +296,12 @@ p#info2{
 }
 div#aves:hover p#info2{
     margin-top:320px;
-    font-family:"Day";
+    font-family:"Corp";
 }
 #info2 a {
     color:white;
     text-decoration:none;
-    font-size:50px;
+    font-size:100px;
 }
 
 /*Delirium Tremens*/
@@ -328,8 +332,9 @@ div#DT:hover div#infoDT {
     position:absolute;
     -webkit-transition:margin 0.2s;
     margin-left:auto;
-    font-size:50px;
+    font-size:100px;
     margin-top:20px;
+    font-family:"Corp";
 }
 div#DT:hover p#headlineDT{
 margin-left:145px;
@@ -345,12 +350,12 @@ p#info2DT{
 }
 div#DT:hover p#info2DT{
     margin-top:320px;
-    font-family:"Day";
+    font-family:"Corp";
 }
 #info2DT a {
     color:white;
     text-decoration:none;
-    font-size:50px;
+    font-size:100px;
 }
 
 .end{
@@ -461,4 +466,10 @@ div#DT:hover p#info2DT{
 }
 .thumbs a {
     color:black;
+}
+.marco > td > a > img {
+    width: 100%;
+    height:100%;
+    float:left;
+    border: 2px solid white;
 }
