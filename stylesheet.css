@@ -474,3 +474,6 @@ p {
     text-align: center;
     font-size: 20px;
 }
+#choose1 > a > img {
+    position:relative;
+}
