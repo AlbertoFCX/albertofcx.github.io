@@ -50,12 +50,11 @@
 	border-top-right-radius:15px;
 	border-bottom-right-radius:15px;
 	border-bottom-left-radius:15px;
-	margin-bottom: 0px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 300px;
+    margin-top: 10%;
     background-color: rgba(255,255,255,.15);
-    position:absolute;
+    position:relative;
     color:white;
    
 }
@@ -69,16 +68,15 @@
 	border-top-right-radius:15px;
 	border-bottom-right-radius:15px;
 	border-bottom-left-radius:15px;
-	margin-bottom: 0px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 800px;
+    margin-top: 10%;
     padding-bottom: 0px;
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px; 
     background-color: rgba(255,255,255,.15);
-    position:absolute;
+    position:relative;
     color:white;
 }
 
@@ -91,16 +89,15 @@
 	border-top-right-radius:15px;
 	border-bottom-right-radius:15px;
 	border-bottom-left-radius:15px;
-	margin-bottom: 0px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 1300px;
+    margin-top: 10%;
     padding-bottom: 0px;
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px; 
     background-color: rgba(255,255,255,.15);
-    position:absolute;
+    position:relative;
     color:white;
 }
 
@@ -362,7 +359,7 @@ div#DT:hover p#info2DT{
     width:95%;
     height:3px;
     background-color:white;
-    margin-top: 1800px;
+    margin-top: 10%;
     margin-left:18px;
     box-shadow: 50px 50px 50px rgba(0,0,0,0.4);
     position:relative;
